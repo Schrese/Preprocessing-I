@@ -129,13 +129,52 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
-  border: 1px solid grey;
 }
 html,
 body {
   height: 100%;
+  font-size: 10px;
 }
 header {
   display: flex;
   justify-content: flex-end;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+header a {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 50%;
+  text-decoration: none;
+  color: black;
+  font-size: 2.5rem;
+}
+.introduction {
+  display: flex;
+  background-color: lightblue;
+  width: 95%;
+  height: 60%;
+}
+.introduction .imgClass {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+  align-items: center;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+.introduction .paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+}
+.introduction h1 {
+  display: flex;
+  justify-content: column;
+  font-size: 5rem;
 }

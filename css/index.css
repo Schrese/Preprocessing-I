@@ -158,6 +158,7 @@ header a {
   background-color: lightblue;
   width: 95%;
   height: 60%;
+  margin: 0 auto;
 }
 .introduction .imgClass {
   display: flex;
@@ -166,6 +167,7 @@ header a {
   align-items: center;
   padding-top: 5%;
   padding-left: 5%;
+  padding-bottom: 5%;
 }
 .introduction .paragraph {
   display: flex;
@@ -176,5 +178,94 @@ header a {
 .introduction h1 {
   display: flex;
   justify-content: column;
-  font-size: 5rem;
+  font-size: 4.5rem;
+}
+.introduction h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 3rem;
+  border-top: 1px dotted black;
+}
+.introduction p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  padding-bottom: 2%;
+}
+.introduction .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: darkgrey;
+  border: 1px solid black;
+  border: none;
+  border-radius: 25px;
+  width: 20%;
+  height: 5%;
+  cursor: pointer;
+}
+.skills {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 3%;
+}
+.skills .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+}
+.skills h3 {
+  font-size: 4rem;
+}
+.skills p {
+  font-size: 1.5rem;
+}
+.skills .goodAt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-items: stretch;
+  width: 30%;
+  padding-right: 10%;
+}
+.skills p {
+  padding: 2%;
+  border: 1px solid grey;
+}
+.history {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  border-top: 1px solid black;
+  height: 15%;
+}
+.history th {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 5%;
+}
+.history td {
+  font-size: 1.5rem;
+  padding-left: 5%;
+}
+.history .blue {
+  background-color: lightblue;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  padding: 4%;
 }

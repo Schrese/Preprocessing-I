@@ -64,7 +64,13 @@ table {
 	margin: 0 auto;
 }
 
+.left() {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 
+}
 
 
 html, body {
@@ -97,6 +103,7 @@ header{
 	background-color: @backgroundColor;
 	width: 95%;
 	height: 60%;
+	margin: 0 auto;
 
 	.imgClass {
 		display: flex;
@@ -105,6 +112,7 @@ header{
 		align-items: center;
 		padding-top: 5%;
 		padding-left: 5%;
+		padding-bottom: 5%;
 		
 	}
 
@@ -118,6 +126,90 @@ header{
 	h1 {
 		display: flex;
 		justify-content: column;
-		font-size: 5rem;
+		font-size: 4.5rem;
 	}
+	h4 {
+		.center();
+		font-size: 3rem;
+		border-top: 1px dotted black;
+	}
+	p {
+		.center();
+		font-size: 1.3rem;
+		padding-bottom: 2%;
+
+	}
+	.button {
+		.center();
+		background-color: @buttonColor;
+		border: 1px solid black;
+		border: none;
+		border-radius: 25px;
+		width: 20%;
+		height: 5%;
+		cursor: pointer;
+		
+	}
+}
+
+.skills {
+	display: flex;
+	justify-content: space-between;
+	width: 95%;
+	margin: 0 auto;
+	padding-bottom: 3%;
+
+	.about {
+		.left();
+		width: 60%;
+	}
+		h3 {
+			font-size: 4rem;
+		}
+		p {
+			font-size: 1.5rem;
+		}
+	.goodAt {
+		.left();
+		align-items: stretch;
+		width: 30%;
+		padding-right: 10%;
+	}
+		p {
+			padding: 2%;
+			border: 1px solid grey;
+		}
+}
+
+.history {
+	width: 90%;
+	margin: 0 auto;
+	text-align: left;
+	border-top: 1px solid black;
+	height: 15%;
+	
+
+	// tr {
+	// 	border-top: 1px solid black;
+		
+	// }
+	th {
+		font-size: 2rem;
+		font-weight: bold;
+		padding-left: 5%;
+	}
+	td {
+		font-size: 1.5rem;
+		padding-left: 5%;
+	}
+	.blue {
+		background-color: @backgroundColor;
+	}
+}
+
+footer {
+	display: flex;
+	.center();
+	font-size: 1.2rem;
+	padding: 4%;
 }

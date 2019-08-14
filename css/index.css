@@ -135,6 +135,14 @@ body {
   height: 100%;
   font-size: 10px;
 }
+h1,
+h2,
+h3 {
+  font-family: 'Ubuntu', sans-serif;
+}
+p {
+  font-family: 'B612 Mono', monospace;
+}
 header {
   display: flex;
   justify-content: flex-end;
@@ -177,7 +185,7 @@ header a {
 }
 .introduction h1 {
   display: flex;
-  justify-content: column;
+  justify-content: center;
   font-size: 4.5rem;
 }
 .introduction h4 {
@@ -223,10 +231,10 @@ header a {
   align-items: center;
   width: 60%;
 }
-.skills h3 {
+.skills .about h3 {
   font-size: 4rem;
 }
-.skills p {
+.skills .about p {
   font-size: 1.5rem;
 }
 .skills .goodAt {
@@ -237,8 +245,14 @@ header a {
   align-items: stretch;
   width: 30%;
   padding-right: 10%;
+  padding-top: 2%;
 }
-.skills p {
+.skills .goodAt h3 {
+  font-size: 4rem;
+  padding-bottom: 3%;
+}
+.skills .goodAt p {
+  font-size: 1.5rem;
   padding: 2%;
   border: 1px solid grey;
 }

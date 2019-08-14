@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 2;
 }
 ol, ul {
 	list-style: none;
@@ -49,11 +49,21 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@backgroundColor: lightblue;
+@buttonColor: darkgrey;
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid grey;
 }
+
+
 
 html, body {
     height: 100%;
 }
 
+header{
+	display: flex;
+	justify-content: flex-end;
+	
+}

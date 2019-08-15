@@ -1,1 +1,385 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 2;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 10px;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Ubuntu', sans-serif;
+}
+@media only screen and (max-width: 500px) {
+  header {
+    width: 100%;
+  }
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+@media only screen and (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0%;
+  }
+}
+header a {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 50%;
+  text-decoration: none;
+  color: black;
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 500px) {
+  header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0%;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+  }
+}
+.introduction {
+  display: flex;
+  background-color: lightblue;
+  width: 95%;
+  height: 80%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 500px) {
+  .introduction {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.introduction .imgClass {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+  align-items: center;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+@media only screen and (max-width: 500px) {
+  .introduction .imgClass {
+    display: none;
+  }
+}
+.introduction .paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+}
+.introduction h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 4.5rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+@media only screen and (max-width: 500px) {
+  .introduction h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.introduction h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 3rem;
+  border-top: 1px dotted black;
+  font-family: 'Ubuntu', sans-serif;
+}
+.introduction p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  padding-bottom: 2%;
+  font-family: 'B612 Mono', monospace;
+}
+.introduction .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: darkgrey;
+  border: 1px solid black;
+  border: none;
+  border-radius: 25px;
+  width: 20%;
+  height: 5%;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+  .introduction .button {
+    width: 40%;
+  }
+}
+.skills {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 3%;
+}
+@media only screen and (max-width: 500px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.skills .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+}
+@media only screen and (max-width: 500px) {
+  .skills .about {
+    width: 100%;
+  }
+}
+.skills h3 {
+  font-size: 4rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+.skills p {
+  font-size: 1.5rem;
+  font-family: 'B612 Mono', monospace;
+}
+@media only screen and (max-width: 500px) {
+  .skills p {
+    width: 95%;
+  }
+}
+.skills .goodAt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-items: stretch;
+  width: 30%;
+  padding-right: 10%;
+  padding-top: 2%;
+}
+@media only screen and (max-width: 500px) {
+  .skills .goodAt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0%;
+    background-color: yellow;
+  }
+}
+.skills .goodAt h3 {
+  font-size: 4rem;
+  padding-bottom: 3%;
+  font-family: 'Ubuntu', sans-serif;
+}
+@media only screen and (max-width: 500px) {
+  .skills .goodAt h3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.skills .goodAt p {
+  font-size: 1.5rem;
+  padding: 2%;
+  border: 1px solid grey;
+  font-family: 'B612 Mono', monospace;
+}
+@media only screen and (max-width: 500px) {
+  .skills .goodAt p {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.history {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  border-top: 1px solid black;
+  height: 15%;
+}
+.history th {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 5%;
+  font-family: 'Ubuntu', sans-serif;
+}
+.history td {
+  font-size: 1.5rem;
+  padding-left: 5%;
+  font-family: 'B612 Mono', monospace;
+}
+.history .blue {
+  background-color: lightblue;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  padding: 4%;
+  font-family: 'B612 Mono', monospace;
+}

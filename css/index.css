@@ -135,22 +135,31 @@ body {
   height: 100%;
   font-size: 10px;
 }
-h1,
-h2,
-h3 {
-  font-family: 'Ubuntu', sans-serif;
-}
-p {
-  font-family: 'B612 Mono', monospace;
-}
 header {
   display: flex;
   justify-content: flex-end;
+  font-family: 'Ubuntu', sans-serif;
+}
+@media only screen and (max-width: 500px) {
+  header {
+    width: 100%;
+  }
 }
 header nav {
   display: flex;
   justify-content: space-between;
   padding: 0 5%;
+}
+@media only screen and (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0%;
+  }
 }
 header a {
   display: flex;
@@ -161,21 +170,45 @@ header a {
   color: black;
   font-size: 2.5rem;
 }
+@media only screen and (max-width: 500px) {
+  header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0%;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+  }
+}
 .introduction {
   display: flex;
   background-color: lightblue;
   width: 95%;
-  height: 60%;
+  height: 80%;
   margin: 0 auto;
+}
+@media only screen and (max-width: 500px) {
+  .introduction {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .introduction .imgClass {
   display: flex;
   justify-content: space-around;
-  width: 25%;
+  width: 35%;
   align-items: center;
   padding-top: 5%;
   padding-left: 5%;
   padding-bottom: 5%;
+}
+@media only screen and (max-width: 500px) {
+  .introduction .imgClass {
+    display: none;
+  }
 }
 .introduction .paragraph {
   display: flex;
@@ -187,6 +220,14 @@ header a {
   display: flex;
   justify-content: center;
   font-size: 4.5rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+@media only screen and (max-width: 500px) {
+  .introduction h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
 .introduction h4 {
   display: flex;
@@ -195,6 +236,7 @@ header a {
   margin: 0 auto;
   font-size: 3rem;
   border-top: 1px dotted black;
+  font-family: 'Ubuntu', sans-serif;
 }
 .introduction p {
   display: flex;
@@ -203,6 +245,7 @@ header a {
   margin: 0 auto;
   font-size: 1.3rem;
   padding-bottom: 2%;
+  font-family: 'B612 Mono', monospace;
 }
 .introduction .button {
   display: flex;
@@ -215,7 +258,13 @@ header a {
   border-radius: 25px;
   width: 20%;
   height: 5%;
+  font-family: 'Ubuntu', sans-serif;
   cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+  .introduction .button {
+    width: 40%;
+  }
 }
 .skills {
   display: flex;
@@ -224,6 +273,13 @@ header a {
   margin: 0 auto;
   padding-bottom: 3%;
 }
+@media only screen and (max-width: 500px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .skills .about {
   display: flex;
   flex-direction: column;
@@ -231,11 +287,23 @@ header a {
   align-items: center;
   width: 60%;
 }
-.skills .about h3 {
-  font-size: 4rem;
+@media only screen and (max-width: 500px) {
+  .skills .about {
+    width: 100%;
+  }
 }
-.skills .about p {
+.skills h3 {
+  font-size: 4rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+.skills p {
   font-size: 1.5rem;
+  font-family: 'B612 Mono', monospace;
+}
+@media only screen and (max-width: 500px) {
+  .skills p {
+    width: 95%;
+  }
 }
 .skills .goodAt {
   display: flex;
@@ -247,14 +315,43 @@ header a {
   padding-right: 10%;
   padding-top: 2%;
 }
+@media only screen and (max-width: 500px) {
+  .skills .goodAt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0%;
+    background-color: yellow;
+  }
+}
 .skills .goodAt h3 {
   font-size: 4rem;
   padding-bottom: 3%;
+  font-family: 'Ubuntu', sans-serif;
+}
+@media only screen and (max-width: 500px) {
+  .skills .goodAt h3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .skills .goodAt p {
   font-size: 1.5rem;
   padding: 2%;
   border: 1px solid grey;
+  font-family: 'B612 Mono', monospace;
+}
+@media only screen and (max-width: 500px) {
+  .skills .goodAt p {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .history {
   width: 90%;
@@ -267,10 +364,12 @@ header a {
   font-size: 2rem;
   font-weight: bold;
   padding-left: 5%;
+  font-family: 'Ubuntu', sans-serif;
 }
 .history td {
   font-size: 1.5rem;
   padding-left: 5%;
+  font-family: 'B612 Mono', monospace;
 }
 .history .blue {
   background-color: lightblue;
@@ -282,4 +381,5 @@ footer {
   margin: 0 auto;
   font-size: 1.2rem;
   padding: 4%;
+  font-family: 'B612 Mono', monospace;
 }
